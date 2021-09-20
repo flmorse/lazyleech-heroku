@@ -102,7 +102,7 @@ async def _upload_worker(client, message, reply, torrent_info, user_id, flags):
                 files[filepath] = filename
         for filepath in natsorted(files):
             sent_files.extend(await _upload_file(client, message, reply, files[filepath], filepath, ForceDocumentFlag in flags))
-    text = 'Files:\n'
+    text = '#Uploads : \n'
     parser = pyrogram_html.HTML(client)
     quote = None
     first_index = None
