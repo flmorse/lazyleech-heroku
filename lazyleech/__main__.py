@@ -42,7 +42,7 @@ async def main():
     await app.start()
     await idle()
     await app.stop()
-    if os.environ.get('DB_URL'):
+    if os.environ.get('DATABASE_URL'):
         from plugins.nyaa_auto_download import _close_db
         _close_db()
     
