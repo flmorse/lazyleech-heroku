@@ -9,17 +9,17 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          heroku_api_key: 5d881327-1f1a-4bd2-9904-8982e01da9b1
+          heroku_app_name: jdlazyleech
+          heroku_email: iamthefoxspirits@protonmail.com
           usedocker: true
           docker_heroku_process_type: worker
           stack: "container"
           region: "eu"
         env:
-          HD_API_ID: ${{secrets.API_ID}}
-          HD_API_HASH: ${{secrets.API_HASH}}
-          HD_BOT_TOKEN: ${{secrets.BOT_TOKEN}}
-          HD_ADMIN_CHATS: ${{secrets.ADMIN_CHATS}}
-
-
+          HD_API_ID: 1957706
+          HD_API_HASH: b1fc05cb6e99b67c6fca96538c6d7e7e
+          HD_BOT_TOKEN: 2033257854:AAEN0ynXbXvt7e0erE1wSM37s4_CuSAU8bY
+          HD_ADMIN_CHATS: 831054990
+          HD_NYAA_RSS_LINKS: https://nyaa.squid.workers.dev/?page=rss&q=720p&c=1_2&f=0
+          HD_RSS_RECHECK_INTERVAL: 5
