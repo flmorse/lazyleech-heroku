@@ -15,11 +15,12 @@ jobs:
           usedocker: true
           docker_heroku_process_type: worker
           stack: "container"
-          region: "eu"
+          region: "us"
         env:
           HD_API_ID: 1957706
           HD_API_HASH: b1fc05cb6e99b67c6fca96538c6d7e7e
           HD_BOT_TOKEN: 2033257854:AAEN0ynXbXvt7e0erE1wSM37s4_CuSAU8bY
           HD_ADMIN_CHATS: 831054990
-          HD_NYAA_RSS_LINKS: https://nyaa.squid.workers.dev/?page=rss&q=720p&c=1_2&f=0
+          HD_NYAA_RSS_LINKS: https://yts.mx/rss/0/720p/all/0/all
           HD_RSS_RECHECK_INTERVAL: 5
+          HD_DATABASE_URL: mongodb+srv://jdlazyleech:jdlazyleech@cluster0.85v1y.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
